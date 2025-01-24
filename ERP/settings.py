@@ -96,14 +96,14 @@ WSGI_APPLICATION = 'ERP.wsgi.application'
 # Render postgresSQL database
 import dj_database_url
 
-RENDER_EXTERNAL_HOSTNAME = "postgresql://giriassociates_user:fnO7bKTlYxQDg43doGHuSs3GAzKMmbG1@dpg-cs7mo9dumphs73a9d2kg-a.oregon-postgres.render.com/giriassociates"
+RENDER_EXTERNAL_HOSTNAME = "postgresql://giriassociates009_user:4E7frq2M2CbCtsXYe5YqKxmmBXq8MVUR@dpg-cu9pantds78s739h40e0-a.singapore-postgres.render.com/giriassociates009"
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 DATABASES = {
     'default': dj_database_url.config(
         # Feel free to alter this value to suit your needs.
-        default='postgresql://giriassociates_user:fnO7bKTlYxQDg43doGHuSs3GAzKMmbG1@dpg-cs7mo9dumphs73a9d2kg-a.oregon-postgres.render.com/giriassociates',
+        default='postgresql://giriassociates009_user:4E7frq2M2CbCtsXYe5YqKxmmBXq8MVUR@dpg-cu9pantds78s739h40e0-a.singapore-postgres.render.com/giriassociates009',
         conn_max_age=600
     )
 }
